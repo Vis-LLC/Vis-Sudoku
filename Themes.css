@@ -1,0 +1,144 @@
+/*
+    Copyright (C) 2021 Vis Software LLC. - All Rights Reserved
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Lesser General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+/*
+    Vis Sudoku - Source code can be found on SourceForge.net
+*/
+
+.light_theme {
+    color: black;
+    background-color: white;
+}
+
+.light_theme #Board .field_tile {
+    background-color: white;
+}
+
+.light_theme #Board .field_tile,#Selector .field_tile {
+    border-color: gray;
+}
+
+.light_theme #Selector .field_tile {
+    background-color: lightblue;          
+}
+
+.light_theme .field_view .field_location .field_select:hover {
+    background-color: magenta;
+}
+
+.light_theme #Board .bottom-border .field_tile {
+    border-bottom-color: black;
+}
+
+.light_theme #Board .right-border .field_tile {
+    border-right-color: black;
+}
+
+.light_theme #Board .left-border .field_tile {
+    border-left-color: black;
+}
+
+.light_theme #Board .top-border .field_tile {
+    border-top-color: black;
+}
+
+.light_theme #Board .wrong .field_tile {
+    background-color: red;
+}
+
+.light_theme #Board .player-selectable .field_tile {
+    background-color: lightgray;
+}
+
+.light_theme #Controls {
+    background-color: lightblue;
+}
+
+.light_theme #Success {
+    background-color: white;
+}
+
+.dark_theme #Board .field_tile {
+    background-color: black;
+}
+
+.light_theme input[type=button] {
+    background-color: black;
+    color:white;
+}
+
+
+
+
+
+.dark_theme {
+    color: white;
+    background-color: black;
+}
+
+.dark_theme #Board .field_tile {
+    background-color: black;
+}
+
+.dark_theme #Board .field_tile,#Selector .field_tile {
+    border-color: gray;
+}
+
+.dark_theme #Selector .field_tile {
+    background-color: darkblue;          
+}
+
+.dark_theme .field_view .field_location .field_select:hover {
+    background-color: magenta;
+}
+
+.dark_theme #Board .bottom-border .field_tile {
+    border-bottom-color: white;
+}
+
+.dark_theme #Board .right-border .field_tile {
+    border-right-color: white;
+}
+
+.dark_theme #Board .left-border .field_tile {
+    border-left-color: white;
+}
+
+.dark_theme #Board .top-border .field_tile {
+    border-top-color: white;
+}
+
+.dark_theme #Board .wrong .field_tile {
+    background-color: red;
+}
+
+.dark_theme #Board .player-selectable .field_tile {
+    background-color: darkgray;
+}
+
+.dark_theme #Controls {
+    background-color: darkblue;
+}
+
+.dark_theme #Success {
+    background-color: black;
+}
+
+.dark_theme input[type=button] {
+    background-color: white;
+    color:black;
+}
