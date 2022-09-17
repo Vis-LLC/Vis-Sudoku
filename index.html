@@ -34,8 +34,9 @@
         <link href="FieldEngine-Defaults.css" rel="stylesheet" />
         <script src="fe-browser.js"></script>
         <script src="Game.js"></script>
+        <script src="Plugins.js"></script>
     </head>
-    <body onload="Game.Init();Game.DisplaySavedGames();">
+    <body onload="Games.Sudoku.Init();Games.Sudoku.DisplaySavedGames();">
         <div id="Game" style="opacity:0;width:100%;height:100%;will-change:opacity;position:absolute;z-index:0;top:0px;left:0px;">
             <div id="Board" style="width:100%;height:100%;position:absolute;z-index:0;top:0px;left:0px">
             </div>
@@ -45,20 +46,20 @@
                 <div id="Timer" style="top:80%;left:0px;width:100%;height:10%;text-align:center;border-style:solid;border-width:thin;border-color:gray;">
                 </div>
                 <div id="Additional" style="top:90%;left:0px;width:100%;height:10%;text-align:center;">
-                    <input type="button" value="Exit" onclick="Game.ReturnToOptions();";>
+                    <input type="button" value="Exit" onclick="Games.Sudoku.ReturnToOptions();";>
                 </div>
             </div>
             <div id="Success" style="opacity:0;position:absolute;z-index:-1;will-change:opacity,transform;width:100%;height:100%;text-align:center;">
                 <div style="position:absolute;left:0%;width:100%;top:33%;z-index:1;">
                     <h1>Success</h1><br />
-                    <input type="button" value="Exit" onclick="Game.ReturnToOptions(true);";>
+                    <input type="button" value="Exit" onclick="Games.Sudoku.ReturnToOptions(true);";>
                 </div>
                 <div style="position:absolute;left:0%;top:0%;width:100%;height:100%;z-index:0;opacity:0.25;background:blue;"></div>
             </div>
             <div id="Failed" style="opacity:0;position:absolute;z-index:-1;will-change:opacity,transform;width:100%;height:100%;text-align:center;">
                 <div style="position:absolute;left:0%;width:100%;top:33%;z-index:1;background:white;">
                     <h1>Failed</h1><br />
-                    <input type="button" value="Exit" onclick="Game.ReturnToOptions(true);";>
+                    <input type="button" value="Exit" onclick="Games.Sudoku.ReturnToOptions(true);";>
                 </div>
                 <div style="position:absolute;left:0%;top:0%;width:100%;height:100%;z-index:0;opacity:0.25;background:red;"></div>
             </div>            
@@ -80,22 +81,22 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="button" value="Easy" onclick="Game.Start(this.value);">
+                                    <input type="button" value="Easy" onclick="Games.Sudoku.Start(this.value);">
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="button" value="Medium" onclick="Game.Start(this.value);">
+                                    <input type="button" value="Medium" onclick="Games.Sudoku.Start(this.value);">
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="button" value="Hard" onclick="Game.Start(this.value);">
+                                    <input type="button" value="Hard" onclick="Games.Sudoku.Start(this.value);">
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="button" value="Very Hard" onclick="Game.Start(this.value);">
+                                    <input type="button" value="Very Hard" onclick="Games.Sudoku.Start(this.value);">
                                 </td>
                             </tr>
                             <tr>
@@ -108,7 +109,7 @@
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td><input type="button" value="Switch Theme" onclick="Game.SwitchTheme(document.body)"></td>
+                                <td><input type="button" value="Switch Theme" onclick="Games.Sudoku.SwitchTheme(document.body)"></td>
                             </tr>                                                                                    
                         </table>
                     </td>
